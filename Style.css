@@ -1,4 +1,16 @@
 @import url('fonts.css');
+/* Font Definitions */
+:root {
+  --font-primary: Vazirmatn;
+  --color-primaray: #CC312D;
+  --color-secondary: #2F0D0C;
+  --color-gray240: #f0f0f0;
+  --color-gray235: #ebebeb;
+  --color-gray232: #eae7e7;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-transparent: #00000000;
+}
 *,
 *::after,
 *::before {
@@ -9,13 +21,13 @@
 }
 body {
   font-size: 62.5%; /* 10px base */
-  background-color: #ffffff;
-  font-family: Vazirmatn;
+  background-color: var(--color-white);
+  font-family: var(--font-primary);
   display: flex;
   flex-direction: column;
 }
 button {
-  font-family: Vazirmatn;
+  font-family: var(--font-primary);
 }
 .user-menu {
   background-color: #f7f7f7;
@@ -47,7 +59,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   border-radius: 1.2rem;
   padding: 1.2rem;
   margin-left: 1rem;
@@ -77,20 +89,20 @@ button {
   border: none;
   font-size: 1.4rem;
   font-weight: bold;
-  background-color: #00000000;
+  background-color: var(--color-transparent);
   text-align: right;
   display: inline-flex;
   align-items: center;
   gap: 20px;
 }
 .user-menu__item:hover {
-  background-color: #2f0d0c;
-  color: #ffffff;
-  fill: #ffffff;
+  background-color: var(--color-secondary);
+  color:var(--color-white);
+  fill:var(--color-white);
 }
 .user-menu__item:nth-child(1) {
-  background-color: #2f0d0c;
-  color: #ffffff;
+  background-color: var(--color-secondary);
+  color:var(--color-white);
 }
 .user-menu__item:nth-child(4) {
   margin-bottom: 4.8rem;
@@ -98,9 +110,9 @@ button {
 .user-menu__notification {
   width: 3.2rem;
   height: 3.2rem;
-  background-color: #cc312d;
+  background-color: var(--color-primaray);
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--color-white);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +136,7 @@ button {
 }
 .order-summary__logout-button {
   border: none;
-  background-color: #00000000;
+  background-color: var(--color-transparent);
   width: 2.4rem;
   height: 2.4rem;
   position: absolute;
@@ -157,7 +169,7 @@ button {
   width: 22.2rem;
   height: 8.4rem;
   border-radius: 1.6rem;
-  border: 1.5px solid #ebebeb;
+  border: 1.5px solid var(--color-gray235);
   padding: 1.4rem;
   flex: 0 0 auto;
   display: flex;
@@ -167,7 +179,7 @@ button {
   gap: 1.2rem;
 }
 .order-status__card:hover {
-  border: 1.5px solid #cc312d;
+  border: 1.5px solid var(--color-primaray);
 }
 .order-status__icon {
   display: inline;
@@ -191,7 +203,7 @@ button {
 }
 /*  */
 .order-card {
-  border-top: 1px solid #000000;
+  border-top: 1px solid var(--color-black);
   width: 100%;
   height: auto;
   display: flex;
@@ -260,7 +272,7 @@ button {
   width: 7.2rem;
   height: 7.2rem;
   padding: 2rem;
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 1.2rem;
   border: 4px solid #f7f7f7;
   position: relative;
@@ -279,9 +291,9 @@ button {
 }
 .order-card__details-button {
   height: fit-content;
-  background-color: #00000000;
+  background-color: var(--color-transparent);
   border: none;
-  color: #cc312d;
+  color: var(--color-primaray);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,7 +315,7 @@ button {
   }
   /*  */
   .order-card {
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--color-gray235);
     border-radius: 1.6rem;
     margin-bottom: 2.4rem;
     max-width: 85%;
@@ -329,7 +341,7 @@ button {
   .order-card__info {
     padding-bottom: 1.6rem;
     margin-bottom: 1.6rem;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--color-gray240);
     display: flex;
     justify-content: space-between;
   }
@@ -347,13 +359,13 @@ button {
     border-radius: 50%;
     width: 2.4rem;
     height: 2.4rem;
-    background-color: #eae7e7;
-    border: 0.75px solid #2f0d0c;
+    background-color: var(--color-gray232);
+    border: 0.75px solid var(--color-secondary);
     font-weight: 600;
     font-size: 1.2rem;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: var(--color-black);
     z-index: 4;
     margin: auto -3.9rem 0 auto;
   }
