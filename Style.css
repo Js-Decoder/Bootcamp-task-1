@@ -4,9 +4,9 @@
   --font-primary: Vazirmatn;
   --color-primary: #CC312D;
   --color-secondary: #2F0D0C;
-  --color-gray900: #f0f0f0;
-  --color-gray800: #ebebeb;
-  --color-gray700: #eae7e7;
+  --color-gray50: #f0f0f0;
+  --color-gray100: #ebebeb;
+  --color-gray200: #eae7e7;
   --color-black: #000;
   --color-white: #fff;
   --color-transparent: #00000000;
@@ -169,7 +169,7 @@ button {
   width: 22.2rem;
   height: 8.4rem;
   border-radius: 1.6rem;
-  border: 1.5px solid var(--color-gray800);
+  border: 1.5px solid var(--color-gray100);
   padding: 1.4rem;
   flex: 0 0 auto;
   display: flex;
@@ -315,7 +315,7 @@ button {
   }
   /*  */
   .order-card {
-    border: 1px solid var(--color-gray800);
+    border: 1px solid var(--color-gray100);
     border-radius: 1.6rem;
     margin-bottom: 2.4rem;
     max-width: 85%;
@@ -341,7 +341,7 @@ button {
   .order-card__info {
     padding-bottom: 1.6rem;
     margin-bottom: 1.6rem;
-    border-bottom: 1px solid var(--color-gray900);
+    border-bottom: 1px solid var(--color-gray50);
     display: flex;
     justify-content: space-between;
   }
@@ -359,7 +359,7 @@ button {
     border-radius: 50%;
     width: 2.4rem;
     height: 2.4rem;
-    background-color: var(--color-gray700);
+    background-color: var(--color-gray200);
     border: 0.75px solid var(--color-secondary);
     font-weight: 600;
     font-size: 1.2rem;
