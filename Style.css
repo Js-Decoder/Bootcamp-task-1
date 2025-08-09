@@ -2,7 +2,7 @@
 /* Font Definitions */
 :root {
   --font-primary: Vazirmatn;
-  --color-primar: #CC312D;
+  --color-primary: #CC312D;
   --color-secondary: #2F0D0C;
   --color-gray50: #f0f0f0;
   --color-gray100: #ebebeb;
@@ -110,7 +110,7 @@ button {
 .user-menu__notification {
   width: 3.2rem;
   height: 3.2rem;
-  background-color: var(--color-primar);
+  background-color: var(--color-primary);
   border-radius: 50%;
   color: var(--color-white);
   display: inline-flex;
@@ -186,7 +186,7 @@ button {
   gap: 1.2rem;
 }
 .order-status__card:hover {
-  border: 1.5px solid var(--color-primar);
+  border: 1.5px solid var(--color-primary);
 }
 .order-status__icon {
   display: inline;
