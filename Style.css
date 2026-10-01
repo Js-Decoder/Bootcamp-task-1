@@ -25,16 +25,15 @@ body {
   font-family: var(--font-primary);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 button {
   font-family: var(--font-primary);
 }
 .user-menu {
+  margin-top: 2rem;
   background-color: #f7f7f7;
   width: 95.2%;
-  height: 52rem;
-  /* margin: 50px 20px; */
   border-radius: 2rem;
   padding: 24px 19px;
   display: block;
@@ -123,8 +122,7 @@ button {
 }
 
 .order-summary {
-  width: fit-content;
-  height: auto;
+  width: 100%;
 }
 .order-summary__header {
   width: 100%;
@@ -247,11 +245,6 @@ button {
   font-size: 1.6rem;
   color: grey;
 }
-.order-card__code {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
-}
 .Toman {
   font-size: 1rem;
   font-weight: 400;
@@ -309,7 +302,7 @@ button {
   font-size: 1.4rem;
   font-weight: 700;
 }
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   body {
     flex-direction: row;
     padding: 3rem;
@@ -356,9 +349,6 @@ button {
     justify-content: space-between;
   }
   .order-card__delivery-date {
-    display: inline-flex;
-  }
-  .order-card__code {
     display: inline-flex;
   }
   .order-card__image {
@@ -455,4 +445,4 @@ button {
   .order-card__image:nth-child(3) {
     margin-right: 0;
   }
-}
+} */
